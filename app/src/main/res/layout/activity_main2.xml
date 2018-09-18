@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paintActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <com.example.westf.homework1.PaintView
+        android:id="@+id/paintView"
+        android:layout_width="359dp"
+        android:layout_height="391dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/blueSeekBar"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:background="#ffffff" />
+
+    <Button
+        android:id="@+id/randomColor"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Back" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="18dp"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/redSeekBar"
+        android:layout_marginTop="47dp"
+        android:max="255"
+        android:min="0" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/redSeekBar"
+        android:layout_marginTop="78dp"
+        android:max="255"
+        android:min="0" />
+
+    <ImageView
+        android:id="@+id/colorSample"
+        android:layout_width="105dp"
+        android:layout_height="94dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/redSeekBar"
+        android:layout_marginEnd="-39dp"
+        android:layout_toStartOf="@+id/redSeekBar"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/green"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/greenSeekBar"
+        android:layout_marginEnd="-39dp"
+        android:layout_toStartOf="@+id/redSeekBar"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/blueSeekBar"
+        android:layout_marginEnd="-39dp"
+        android:layout_toStartOf="@+id/redSeekBar"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/save"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="save" />
+
+</RelativeLayout>

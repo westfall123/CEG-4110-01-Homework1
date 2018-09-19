@@ -7,6 +7,11 @@ allows a user to switch to a paint view activity where a user can select a color
 color picker and begin drawing their own art piece.  Once finished this application allows the user to
 save his or her art piece directly to their android phone's photo gallery.
 
+Deployment Instructions
+---
+In the homework1 folder you will navigate to the following directory and find the executable apk
+Homework1\app\build\outputs\apk\debug\app-debug-apk
+
 Instructions
 ---
 Below are example images of what the two screens the application has looks like.  On the first page the
